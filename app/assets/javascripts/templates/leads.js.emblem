@@ -1,0 +1,11 @@
+.row
+  .col-md-6
+    article#leads
+      h1 Leads
+      h4 leads here
+      ul
+        each lead in controller
+          link-to 'lead' lead tagName="li"
+            lead.fullName
+  .col-md-6
+    = outlet
